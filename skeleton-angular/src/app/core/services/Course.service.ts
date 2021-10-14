@@ -5,13 +5,14 @@ import { HttpServiceBase } from './Http-service-base';
 @Injectable({
   providedIn: 'root'
 })
-export class CursoService  extends HttpServiceBase<any>{
+export class CourseService  extends HttpServiceBase<any>{
 
     constructor(protected httpClient: HttpClient ) { 
     super(httpClient);
   }
   
   getResourceUrl(): string {
-    return 'posts';
+    return 'scpossss';
   }
+ 
 }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  APIUrl:"ff"
+  APIUrl:"https://androidep.herokuapp.com/"
 };
 
 /*

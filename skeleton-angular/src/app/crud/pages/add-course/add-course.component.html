@@ -1,0 +1,53 @@
+<h5 class="text-center">Insertar Curso</h5>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <form class="row g-3 border" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" >
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="inputEmail4"  formControlName="nombre" required/>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Duracion:</label>
+          <input type="text" class="form-control" id="inputPassword4"  required/>
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label" >Tutor:</label>
+          <input
+          formControlName="tutor"
+          required
+            type="text"
+            class="form-control"
+            id="inputAddress"
+
+          />
+        </div>
+        <div class="col-6">
+          <label for="inputAddress2" class="form-label" >Valoracion:</label>
+          <input
+          required
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Precio:</label>
+          <input type="number" class="form-control" id="inputCity" required/>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Especialidad:</label>
+          <select id="inputState" class="form-select"  name="opts" required formControlName="optEspecialidad">
+            <option selected value="1">Desarrollo Web</option>
+            <option value=2>IOT</option>
+              <option value=3>Ciencia de Datos</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary mt-3" >Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

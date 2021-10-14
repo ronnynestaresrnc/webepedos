@@ -9,7 +9,6 @@ import { catchError } from 'rxjs/operators';
 })
 export abstract class HttpServiceBase<T> {
   private readonly APIUrl = environment.APIUrl + this.getResourceUrl();
-
   constructor(protected httpClient: HttpClient ) {
   }
 

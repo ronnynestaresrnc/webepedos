@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg text-dark bg-light">
+    <div class="container d-flex justify-content-between font-weight-bold text-dark  py-3">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/logo.png" alt="" height="56" width="155">
+        </a>
+        <ul class="navbar-nav  mb-2 mb-lg-0   flex-hijo text-dark ">
+            <li class="nav-item text-dark ">
+                <a class="nav-link active font-weight-bold text-dark " aria-current="page" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark " routerLink="/cursos">cursos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                                 Dates
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" routerLink="/course">Tables</a></li>
+                    <li><a class="dropdown-item" routerLink="/home/master-consult">Detalles Cursos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark " routerLink="blog" >blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark " routerLink="galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark " routerLink="/character">Personajes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark " routerLink="/noticias">Contacto</a>
+            </li>
+        </ul>
+        <div class="nav-section text-secondary ">
+            <i class="bi bi-cart-fill "></i> |
+            <i class="bi bi-person-fill "></i>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpServiceBase } from './services/Http-service-base';
-import { CursoService } from './services/curso.service';
-
-
+import { CourseService } from './services/course.service';
 
 @NgModule({
-  declarations: [],
-  providers:[CursoService],
+  declarations: [
+
+  ],
+  providers:[CourseService],
   imports: [
     CommonModule
   ]
-,exports:[]
+,exports:[
+
+
+]
 })
 export class CoreModule { }
