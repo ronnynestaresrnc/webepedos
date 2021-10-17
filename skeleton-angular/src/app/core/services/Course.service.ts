@@ -7,12 +7,12 @@ import { HttpServiceBase } from './Http-service-base';
 })
 export class CourseService  extends HttpServiceBase<any>{
 
-    constructor(protected httpClient: HttpClient ) { 
+    constructor(public httpClient: HttpClient ) {
     super(httpClient);
   }
-  
+
   getResourceUrl(): string {
     return 'scpossss';
   }
- 
+
 }

@@ -9,13 +9,13 @@
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Duracion:</label>
-          <input type="text" class="form-control" id="inputPassword4"  required/>
+          <input type="text" class="form-control" id="inputPassword4"  formControlName="duracion" required/>
         </div>
         <div class="col-6">
-          <label for="inputAddress" class="form-label" >Tutor:</label>
+          <label for="inputAddress" class="form-label"   >Tutor:</label>
           <input
-          formControlName="tutor"
-          required
+
+            formControlName="tutor"
             type="text"
             class="form-control"
             id="inputAddress"
@@ -26,21 +26,22 @@
           <label for="inputAddress2" class="form-label" >Valoracion:</label>
           <input
           required
-            type="text"
+            type="number"
             class="form-control"
             id="inputAddress2"
+            formControlName="valoracion"
 
           />
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">Precio:</label>
-          <input type="number" class="form-control" id="inputCity" required/>
+          <input type="number" class="form-control" id="inputCity" formControlName="precio" required/>
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">Especialidad:</label>
-          <select id="inputState" class="form-select"  name="opts" required formControlName="optEspecialidad">
+          <select id="inputState" class="form-select"  name="opts" required formControlName="idespecialidad">
             <option selected value="1">Desarrollo Web</option>
-            <option value=2>IOT</option>
+            <option value=2 >IOT</option>
               <option value=3>Ciencia de Datos</option>
           </select>
         </div>

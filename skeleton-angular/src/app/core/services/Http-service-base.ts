@@ -14,12 +14,9 @@ export abstract class HttpServiceBase<T> {
 
   abstract getResourceUrl(): string;
 
-   getList(page: number, count: number): Observable<T[]> {
-    let params = new HttpParams()
-			.set('page', page.toString())
-			.set('count', count.toString());
+   getList(): Observable<T[]> {
 
-    return this.httpClient.get<T[]>(`/${this.APIUrl}}?${params.toString()}`)
+    return this.httpClient.get<any>(`/${this.APIUrl}`)
       .pipe(
         catchError(this.handleError)
       );
@@ -31,7 +28,7 @@ export abstract class HttpServiceBase<T> {
         catchError(this.handleError)
       );
   }
-  
+
   add(resource: T): Observable<any> {
     return this.httpClient.post(`/${this.APIUrl}}`, resource)
       .pipe(
@@ -40,7 +37,7 @@ export abstract class HttpServiceBase<T> {
   }
 
   delete(id: string | number): Observable<any> {
-    return this.httpClient.delete(`/${this.APIUrl}}/${id}`) 
+    return this.httpClient.delete(`/${this.APIUrl}}/${id}`)
       .pipe(
         catchError(this.handleError)
       );
@@ -52,7 +49,7 @@ export abstract class HttpServiceBase<T> {
         catchError(this.handleError)
       );
   }
-  
+
   private handleError(error: HttpErrorResponse) {
     // Handle the HTTP error here
     return throwError('Something wrong happened');

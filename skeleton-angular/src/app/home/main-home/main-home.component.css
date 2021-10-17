@@ -1,0 +1,15 @@
+.item-active{
+    background-color: #D1EFB5;
+}
+
+.carousel img{
+    width: 100%;
+    height: 550px !important;
+}
+.hero-image img{
+    width: 100%;
+    height: 590px ;
+}
+.activafo li:active{
+  color: red;;
+}

@@ -8,6 +8,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainHomeComponent } from './main-home/main-home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CrudService } from '../crud/services/crud.service';
 
 
 
@@ -19,11 +21,14 @@ import { MainHomeComponent } from './main-home/main-home.component';
     MasterConsultComponent,
     MainHomeComponent
   ],
+
+providers:[CrudService],
   imports: [
+          HttpClientModule,
     CommonModule,
     HomeRoutingModule,
     SharedModule
-    
+
   ]
 })
 export class HomeModule { }
